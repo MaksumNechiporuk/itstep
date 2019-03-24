@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\шаг\програмування\с++ ооп\autopark\project1\project1\main.cpp(107): warning C4326: return type of 'main' should be 'int' instead of 'void'
+d:\шаг\програмування\с++ ооп\autopark\project1\project1\main.cpp(98): warning C4715: 'BusList1::Show': not all control paths return a value
+d:\шаг\програмування\с++ ооп\autopark\project1\project1\main.cpp(86): warning C4715: 'BusList1::Clear': not all control paths return a value
+  Project1.vcxproj -> D:\ШАГ\Програмування\С++ ООП\AutoPark\Project1\Debug\Project1.exe

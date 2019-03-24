@@ -1,0 +1,3 @@
+﻿  Source.cpp
+e:\шаг\програмування\с++ ооп\builder\builder\source.cpp(93): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Builder.vcxproj -> E:\ШАГ\Програмування\С++ ООП\Builder\Debug\Builder.exe
