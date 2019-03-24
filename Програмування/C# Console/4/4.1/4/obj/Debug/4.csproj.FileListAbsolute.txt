@@ -1,0 +1,7 @@
+D:\ШАГ\Програмування\C# Console\4\4.1\4\bin\Debug\4.exe.config
+D:\ШАГ\Програмування\C# Console\4\4.1\4\bin\Debug\4.exe
+D:\ШАГ\Програмування\C# Console\4\4.1\4\bin\Debug\4.pdb
+D:\ШАГ\Програмування\C# Console\4\4.1\4\obj\Debug\4.csprojAssemblyReference.cache
+D:\ШАГ\Програмування\C# Console\4\4.1\4\obj\Debug\4.csproj.CoreCompileInputs.cache
+D:\ШАГ\Програмування\C# Console\4\4.1\4\obj\Debug\4.exe
+D:\ШАГ\Програмування\C# Console\4\4.1\4\obj\Debug\4.pdb

@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\шаг\програмування\с++\project2\project2\source.cpp(15): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Project2.vcxproj -> D:\ШАГ\Програмування\С++\Project2\Debug\Project2.exe

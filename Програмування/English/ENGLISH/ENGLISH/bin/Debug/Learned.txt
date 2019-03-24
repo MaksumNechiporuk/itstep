@@ -1,0 +1,226 @@
+﻿word  -  слово
+
+line  -  лінія
+
+system  -  система
+
+research  -  дослідження
+
+man  -  чоловік
+
+kid  -  дитина
+
+money  -  гроші
+
+study  -  вивчення
+
+guy  -  хлопець
+
+game  -  гра
+
+year  -  рік
+
+story  -  історія
+
+change  -  зміна
+
+problem  -  проблема
+
+team  -  команда
+
+water  -  вода
+
+part  -  частина
+
+room  -  кімната
+
+area  -  площа
+
+party  -  вечірка
+
+force  -  сила
+
+business  -  бізнес
+
+side  -  сторона
+
+car  -  машина
+
+question  -  запитання
+
+state  -  держава
+
+time  -  час
+
+house  -  дім
+
+mother  -  матір
+
+president  -  президент
+
+back  -  назад
+
+hand  -  рука
+
+parent  -  батьки
+
+power  -  сила
+
+result  -  результат
+
+girl  -  дівчина
+
+right  -  правильно
+
+world  -  світ
+
+family  -  родина
+
+art  -  мистецтво
+
+point  -  точка
+
+father  -  батько
+
+law  -  закон
+
+history  -  історія
+
+body  -  тіло
+
+government  -  уряд
+
+head  -  голова
+
+office  -  офіс
+
+lot  -  багато
+
+child  -  дитина
+
+student  -  студент
+
+war  -  війна
+
+moment  -  момент
+
+face  -  обличчя
+
+end  -  кінець
+
+program  -  прогама
+
+number  -  число
+
+group  -  група
+
+case  -  справа
+
+work  -  робота
+
+minute  -  хвилина
+
+month  -  місяць
+
+job  -  робота
+
+name  -  ім’я
+
+week  -  тиждень
+
+night  -  ніч
+
+teacher  -  вчитель
+
+home  -  дім
+
+school  -  школа
+
+country  -  країна
+
+fact  -  факт
+
+air  -  повітря
+
+education  -  освіта
+
+way  -  шлях
+
+time  -  час
+
+place  -  місце
+
+friend  -  друг
+
+person  -  особистість
+
+book  -  книга
+
+member  -  учасник
+
+hour  -  година
+
+morning  -  ранок
+
+level  -  рівень
+
+others  -  інші
+
+door  -  двері
+
+health  -  здоров’я
+
+idea  -  ідея
+
+people  -  люди
+
+community  -  спільнота
+
+information  -  інформація
+
+eye  -  око
+
+day  -  день
+
+kind  -  доброзичливий
+
+company  -  компанія
+
+life  -  життя
+
+service  -  сервіс
+
+thing  -  річ
+
+reason  -  причина
+
+issue  -  випуск
+
+city  -  місто
+
+woman  -  жінка
+
+woman  -  жінка
+
+information  -  інформація
+
+information  -  інформація
+
+information  -  інформація
+
+area  -  площа
+
+girl  -  дівчина
+
+level  -  рівень
+
+others  -  інші
+
+book  -  книга
+
+man  -  чоловік
+
+teacher  -  вчитель
+
+fact  -  факт
+
