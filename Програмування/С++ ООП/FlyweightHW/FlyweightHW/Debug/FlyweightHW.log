@@ -1,0 +1,3 @@
+﻿  main.cpp
+e:\шаг\програмування\с++ ооп\flyweighthw\flyweighthw\main.cpp(240): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  FlyweightHW.vcxproj -> E:\ШАГ\Програмування\С++ ООП\FlyweightHW\Debug\FlyweightHW.exe

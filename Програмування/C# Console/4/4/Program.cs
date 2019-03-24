@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace _4
@@ -11,25 +10,16 @@ namespace _4
     {
         static void Main(string[] args)
         {
-            
-            Student student = new Student("Ivanov", "Petro", 11, 10,1990);
-            student.AddMarks(CreateArr(), CreateArr(), CreateArr());
-            student.group = 5;
-            student.Show();
-
-
-        }
-        static int[] CreateArr()
-        {
-
-            Random random = new Random();
-            Thread.Sleep(200);
-            int[] marks = new int[random.Next(3,10)];
-            for (int i = 0; i < marks.Length; i++)
+            string a, b;
+            Console.WriteLine("Enter a");
+            a = Console.ReadLine();
+            Console.WriteLine("Enter b");
+            b = Console.ReadLine();
+            for(int i=0;i<a.Length;i++)
             {
-                marks[i] = random.Next(1, 12);
+                char r = a[i];
+               var c= b.Count(b=>b == r);
             }
-            return marks;
         }
     }
 }

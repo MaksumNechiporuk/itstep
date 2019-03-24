@@ -1,9 +1,13 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int main()
 {
-	int a = 0;
-	cout << "Hello, world!"<<a << endl;
-	system("pause"); 
+	cout << "\t\t\t\t\t\t *\n";
+	cout << "\t\t\t\t\t      *     *\n";
+	cout << "\t\t\t\t\t   *    \/\\    *\n";
+	cout << "\t\t\t\t\t  **************\n";
+	cout << "\t\t\t\t\t     *      *\n";
+	cout << "\t\t\t\t\t     *      *\n";
+	cout << "\t\t\t\t\t     ********      \n";
+	system("pause");
 }

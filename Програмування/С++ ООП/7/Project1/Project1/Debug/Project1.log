@@ -1,3 +1,3 @@
-﻿  Source.cpp
-d:\шаг\програмування\с++ ооп\7\project1\project1\source.cpp(16): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Project1.vcxproj -> D:\ШАГ\Програмування\С++ ООП\7\Project1\Debug\Project1.exe
+﻿  Main_1544982955 (1).cpp
+e:\шаг\програмування\с++ ооп\7\project1\main_1544982955 (1).cpp(16): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Project1.vcxproj -> E:\ШАГ\Програмування\С++ ООП\7\Project1\Debug\Project1.exe

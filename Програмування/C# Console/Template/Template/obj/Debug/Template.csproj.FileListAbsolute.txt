@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\Template\Template\bin\Debug\Template.exe.config
+E:\ШАГ\Програмування\C# console\Template\Template\bin\Debug\Template.exe
+E:\ШАГ\Програмування\C# console\Template\Template\bin\Debug\Template.pdb
+E:\ШАГ\Програмування\C# console\Template\Template\obj\Debug\Template.csprojAssemblyReference.cache
+E:\ШАГ\Програмування\C# console\Template\Template\obj\Debug\Template.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\Template\Template\obj\Debug\Template.exe
+E:\ШАГ\Програмування\C# console\Template\Template\obj\Debug\Template.pdb

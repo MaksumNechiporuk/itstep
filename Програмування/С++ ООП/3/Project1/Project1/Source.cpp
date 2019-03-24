@@ -1,193 +1,152 @@
 #include<iostream>
 #include<ctime>
-#include<Windows.h>
-#include<string>
-#include <sstream>
-
 
 using namespace std;
-
-class Document
+class Vending_machine
 {
-public:
-	string name;
-	int size;
-	int prior;
-	Document()
+private:
+	struct Node
 	{
-		static int n = 1;
-		ostringstream ss;
-		ss << n;
-		name = "Document_";
-		name += ss.str();
-		n++;
-		size = 100 + rand() % (1000 - 100);
-		prior = 1 + rand() % (10 - 1);
-	}
-
-	void show()
-	{
-		cout << name << " - " << size <<"  prior - "<<prior<< endl;
-	}
-};
-class Spooler
-{
-	int MAXSIZE;
-	string *queue;
-	int*prior;
-	int size;
+		int val;
+		Node* next;
+	};
+	//вказівник на перший елемент
+	Node * pHead = nullptr;
+	int size = 0;
 
 public:
-	Document doc;
-
-	void Fill( int MAXSIZE = 10)
+	bool Pop(int &val)
 	{
+		if (size == 0) return false;
 
-		size = 0;
-		this->MAXSIZE = MAXSIZE;
-		queue = new string[size];
-		prior = new int[size];
-	}
-	
-
-	bool dequeue(string & val, int &p)
-	{
-		if (!isEmpty())
+		Node* pDel = pHead;
+		val = pDel->val;
+		if (size > 1)
 		{
-			int indMax = 0;
-			int maxPrior = prior[indMax];
-			for (int i = 0; i < size; i++)
-			{
-				if (prior[i]>maxPrior)
-				{
-					maxPrior = prior[i];
-					indMax = i;
-				}
-			}
+			pHead = pHead->next;
+		}
+		delete pDel;
+		size--;
+		return true;
+	}
+	bool Push(int val)
+	{
+		Node* pNew = new Node();
+		pNew->val = val;
 
-			
-			val = queue[indMax];
-			p = prior[indMax];
-			for (int i = indMax; i < size-1; i++)
-			{
-				queue[i] = queue[i + 1];
-				prior[i] = prior[i + 1];
-			}
+		if (!pHead)
+		{
+			pNew->next = nullptr;
+			pHead = pNew;
+		}
+		else
+		{
+			pNew->next = pHead;
+			pHead = pNew;
+		}
+		size++;
+		return true;
+	}
+	bool Clear()
+	{
+		if (size == 0) return false;
+		Node*pDel = pHead;
+		while (pHead != nullptr)
+		{
+			pDel = pHead;
+			pHead = pHead->next;
+			delete pDel;
 			size--;
-			return true;
-		}
-		return false;
-	}
-
-	void enqueue(Document &d)
-	{
-
-		if (!isFull())
-		{
-			string a; 
-			int p;
-		a = d.name;
-			p = d.prior;
-			size++;
-			int *tempPrior = new int[size];
-			string*temp = new string[size];
-			for(int i=0;i<size-1;i++)
-			{
-				tempPrior[i] = prior[i];
-				temp[i] = queue[i];
-			}
-			temp[size - 1] = a;
-			tempPrior[size - 1] = p;
-
-			delete[] prior;
-			delete[]queue;
-			prior = tempPrior;
-			queue = temp;
 		}
 	}
-
-	bool isEmpty()
+	bool Show()
 	{
-		if (size == 0)return true;
-		return false;
-	}
-
-	bool isFull()
-	{
-		if (size == MAXSIZE)return true;
-		return false;
-
-	}
-
-	void Clear()
-	{
-		size = 0;
-	}
-
-	void Show()
-	{
-		for (int i = 0; i < size; i++)
+		cout << "\n--------------SHOW----------\n";
+		if (size == 0) return false;
+		Node*pCur = pHead;
+		while (pCur != nullptr)
 		{
-			cout << queue[i] << " ";
-			cout << prior[i] << endl;
+			cout << pCur->val << " ";
+			pCur = pCur->next;
 		}
 		cout << endl;
 	}
-
-	int GetSize()
-	{
-		return size;
-	}
-
-	~Spooler() { delete[]queue; }
 };
-class Printer
+class charge
 {
 public:
-	Spooler n;
-	void Print(Spooler &s)
+	static int  amount;
+	int number;
+	int hit;
+	
+	charge()
 	{
-		n = s;
-		int prior = 0;
-		string val = " ";
-		for (int i = 0; i < 10; i++)
+		amount++;
+		number = amount;
+		hit = rand() % 100;
+	}
+	void add_charge(Vending_machine &m)
+	{
+		m.Push(number);
+	}
+	void show()
+	{
+	//	cout << number << '\t' << hit << "%" << endl;
+	}
+	void shoots(Vending_machine &m)
+	{
+		int shoot = rand() % 100;
+		cout << shoot << endl;
+		int a;
+		m.Pop(a);
+		if (shoot <= hit)
 		{
-			if (s.isEmpty())
-				break;
-			s.dequeue(val, prior);
-			cout << "Print: " << val<<endl;
-			for (int j = 0; j < 3; j++)
-			{
-				cout << ".";
-				Sleep(s.doc.size);
-			}
-			
-			cout << endl << "Complete\n\n\n\n";
-			val = -1;
-			prior = -1;
-
+			cout <<a<< "  hit\n";
 		}
+		else
+		{
+			cout<<a << "  miss\n";
+		}
+	}
+
+};
+int charge::amount = 1;
+class automaton
+{
+public:
+	string name = "AK-47";
+	Vending_machine m;
+	charge s[30];
+	automaton(Vending_machine &k, charge l[])
+	{
+		m = k;
+		for(int i=0;i<30;i++)
+		s[i] = l[i];
+	}
+	void shoots(int i)
+	{
+		s[i].shoots(m);
+		s[i].show();
+	}
+	void Recharge()
+	{
+		for(int i=0;i<30;i++)
+		s->add_charge(m);
+
 	}
 };
 int main()
 {
 	srand(time(0));
-	Document *a =new Document[5];
-	for (int i = 0; i < 5; i++)
-	{
-		a[i].show();
-	}
-	Spooler b;
-	b.Fill();
-	for (int i = 0; i < 5; i++)
-	{
-		b.enqueue(a[i]);
-	}
-	Printer p;
-	p.Print(b);
-	
+	Vending_machine k;
+	charge l[30];
+	automaton r(k,l);
+	r.Recharge();
+	for(int i=0;i<30;i++)
+	r.shoots(i);
 	
 
 
 	system("pause");
 }
+

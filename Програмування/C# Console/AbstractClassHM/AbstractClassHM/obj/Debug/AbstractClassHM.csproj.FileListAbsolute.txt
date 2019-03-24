@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\bin\Debug\AbstractClassHM.exe.config
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\bin\Debug\AbstractClassHM.exe
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\bin\Debug\AbstractClassHM.pdb
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\obj\Debug\AbstractClassHM.csprojAssemblyReference.cache
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\obj\Debug\AbstractClassHM.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\obj\Debug\AbstractClassHM.exe
+E:\ШАГ\Програмування\C# console\AbstractClassHM\AbstractClassHM\obj\Debug\AbstractClassHM.pdb

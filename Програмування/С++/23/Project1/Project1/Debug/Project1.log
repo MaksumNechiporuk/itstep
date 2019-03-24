@@ -1,0 +1,5 @@
+﻿  Source.cpp
+e:\шаг\програмування\с++\23\project1\project1\source.cpp(186): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+e:\шаг\програмування\с++\23\project1\project1\source.cpp(191): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+e:\шаг\програмування\с++\23\project1\project1\source.cpp(200): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Project1.vcxproj -> E:\ШАГ\Програмування\С++\23\Project1\Debug\Project1.exe

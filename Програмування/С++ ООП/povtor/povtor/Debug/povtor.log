@@ -1,0 +1,5 @@
+﻿  Source.cpp
+e:\шаг\програмування\с++ ооп\povtor\povtor\source.cpp(75): error C2248: Test::Test: невозможно обратиться к private член, объявленному в классе "Test"
+  e:\шаг\програмування\с++ ооп\povtor\povtor\source.cpp(63): note:  см. объявление "Test::Test"
+  e:\шаг\програмування\с++ ооп\povtor\povtor\source.cpp(62): note:  см. объявление "Test"
+e:\шаг\програмування\с++ ооп\povtor\povtor\source.cpp(82): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"

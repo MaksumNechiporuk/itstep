@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\Property\Property\bin\Debug\Property.exe.config
+E:\ШАГ\Програмування\C# console\Property\Property\bin\Debug\Property.exe
+E:\ШАГ\Програмування\C# console\Property\Property\bin\Debug\Property.pdb
+E:\ШАГ\Програмування\C# console\Property\Property\obj\Debug\Property.csprojAssemblyReference.cache
+E:\ШАГ\Програмування\C# console\Property\Property\obj\Debug\Property.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\Property\Property\obj\Debug\Property.exe
+E:\ШАГ\Програмування\C# console\Property\Property\obj\Debug\Property.pdb
