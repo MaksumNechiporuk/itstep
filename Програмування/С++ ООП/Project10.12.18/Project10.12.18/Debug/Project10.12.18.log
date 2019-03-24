@@ -1,3 +1,0 @@
-﻿  log.cpp
-e:\шаг\програмування\с++ ооп\project10.12.18\project10.12.18\log.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Project10.12.18.vcxproj -> E:\ШАГ\Програмування\С++ ООП\Project10.12.18\Debug\Project10.12.18.exe

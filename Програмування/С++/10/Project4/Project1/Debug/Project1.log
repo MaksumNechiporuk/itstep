@@ -1,4 +1,0 @@
-﻿  Source.cpp
-d:\шаг\програмування\с++\10\project4\project1\source.cpp(6): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-d:\шаг\програмування\с++\10\project4\project1\source.cpp(7): warning C4101: buf: неиспользованная локальная переменная
-  Project1.vcxproj -> D:\ШАГ\Програмування\С++\10\Project4\Debug\Project1.exe

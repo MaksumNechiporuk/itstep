@@ -1,3 +1,0 @@
-﻿  Source.cpp
-e:\шаг\програмування\с++ ооп\project21.01.19\project21.01.19\source.cpp(38): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project21.01.19.vcxproj -> E:\ШАГ\Програмування\С++ ООП\Project21.01.19\Debug\Project21.01.19.exe

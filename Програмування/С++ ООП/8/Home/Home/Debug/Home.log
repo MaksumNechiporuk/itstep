@@ -1,5 +1,0 @@
-﻿  Cupboard.cpp
-  main.cpp
-d:\шаг\програмування\с++ ооп\8\home\home\main.cpp(11): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Generating Code...
-  Home.vcxproj -> D:\ШАГ\Програмування\С++ ООП\8\Home\Debug\Home.exe

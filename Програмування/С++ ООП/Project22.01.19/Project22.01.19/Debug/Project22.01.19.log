@@ -1,4 +1,0 @@
-﻿  Source1.cpp
-e:\шаг\програмування\с++ ооп\project22.01.19\project22.01.19\source1.cpp(25): warning C4244: return: преобразование "double" в "int", возможна потеря данных
-e:\шаг\програмування\с++ ооп\project22.01.19\project22.01.19\source1.cpp(86): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-  Project22.01.19.vcxproj -> E:\ШАГ\Програмування\С++ ООП\Project22.01.19\Debug\Project22.01.19.exe

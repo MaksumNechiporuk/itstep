@@ -1,9 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Var.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Archer.cpp
-  Mag.cpp
-  main.cpp
-e:\шаг\програмування\с++ ооп\war\war\var\main.cpp(85): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Swordsman.cpp
-  Unit.cpp
-  Generating Code...
-  Var.vcxproj -> E:\ШАГ\Програмування\С++ ООП\War\War\Debug\War.exe

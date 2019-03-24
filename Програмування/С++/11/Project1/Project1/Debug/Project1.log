@@ -1,4 +1,0 @@
-﻿  Source.cpp
-d:\шаг\програмування\с++\11\project1\project1\source.cpp(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-d:\шаг\програмування\с++\11\project1\project1\source.cpp(6): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project1.vcxproj -> D:\ШАГ\Програмування\С++\11\Project1\Debug\Project1.exe
