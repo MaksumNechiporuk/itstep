@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\Enum\Enum\obj\Debug\Enum.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\Enum\Enum\obj\Debug\Enum.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\Enum\Enum\bin\Debug\Enum.exe.config
-E:\ШАГ\Програмування\C# console\Enum\Enum\bin\Debug\Enum.exe
-E:\ШАГ\Програмування\C# console\Enum\Enum\bin\Debug\Enum.pdb
-E:\ШАГ\Програмування\C# console\Enum\Enum\obj\Debug\Enum.exe
-E:\ШАГ\Програмування\C# console\Enum\Enum\obj\Debug\Enum.pdb

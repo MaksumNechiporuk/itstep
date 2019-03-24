@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\bin\Debug\stringToInt.exe.config
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\bin\Debug\stringToInt.exe
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\bin\Debug\stringToInt.pdb
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\obj\Debug\stringToInt.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\obj\Debug\stringToInt.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\obj\Debug\stringToInt.exe
-E:\ШАГ\Програмування\C# console\stringToInt\stringToInt\obj\Debug\stringToInt.pdb

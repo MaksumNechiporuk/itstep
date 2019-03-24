@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\ARR\ARR\bin\Debug\ARR.exe.config
-E:\ШАГ\Програмування\C# console\ARR\ARR\bin\Debug\ARR.exe
-E:\ШАГ\Програмування\C# console\ARR\ARR\bin\Debug\ARR.pdb
-E:\ШАГ\Програмування\C# console\ARR\ARR\obj\Debug\ARR.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\ARR\ARR\obj\Debug\ARR.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\ARR\ARR\obj\Debug\ARR.exe
-E:\ШАГ\Програмування\C# console\ARR\ARR\obj\Debug\ARR.pdb

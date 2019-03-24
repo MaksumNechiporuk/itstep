@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\bin\Debug\ConsoleApp25.02.19.exe.config
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\bin\Debug\ConsoleApp25.02.19.exe
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\bin\Debug\ConsoleApp25.02.19.pdb
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\obj\Debug\ConsoleApp25.02.19.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\obj\Debug\ConsoleApp25.02.19.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\obj\Debug\ConsoleApp25.02.19.exe
-E:\ШАГ\Програмування\C# console\ConsoleApp25.02.19\ConsoleApp25.02.19\obj\Debug\ConsoleApp25.02.19.pdb

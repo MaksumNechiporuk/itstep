@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\Figure\Figure\bin\Debug\Figure.exe.config
-E:\ШАГ\Програмування\C# console\Figure\Figure\bin\Debug\Figure.exe
-E:\ШАГ\Програмування\C# console\Figure\Figure\bin\Debug\Figure.pdb
-E:\ШАГ\Програмування\C# console\Figure\Figure\obj\Debug\Figure.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\Figure\Figure\obj\Debug\Figure.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\Figure\Figure\obj\Debug\Figure.exe
-E:\ШАГ\Програмування\C# console\Figure\Figure\obj\Debug\Figure.pdb

@@ -1,6 +1,0 @@
-E:\ШАГ\Програмування\C# console\2\2.1\obj\Debug\2.1.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\2\2.1\bin\Debug\2.1.exe.config
-E:\ШАГ\Програмування\C# console\2\2.1\bin\Debug\2.1.exe
-E:\ШАГ\Програмування\C# console\2\2.1\bin\Debug\2.1.pdb
-E:\ШАГ\Програмування\C# console\2\2.1\obj\Debug\2.1.exe
-E:\ШАГ\Програмування\C# console\2\2.1\obj\Debug\2.1.pdb

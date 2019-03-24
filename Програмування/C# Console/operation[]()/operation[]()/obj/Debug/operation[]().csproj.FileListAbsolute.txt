@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\obj\Debug\operation[]().csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\obj\Debug\operation[]().csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\bin\Debug\operation[]().exe.config
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\bin\Debug\operation[]().exe
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\bin\Debug\operation[]().pdb
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\obj\Debug\operation[]().exe
-E:\ШАГ\Програмування\C# console\operation[]()\operation[]()\obj\Debug\operation[]().pdb

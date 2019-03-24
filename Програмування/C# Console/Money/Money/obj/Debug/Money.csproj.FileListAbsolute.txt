@@ -1,7 +1,0 @@
-E:\ШАГ\Програмування\C# console\Money\Money\bin\Debug\Money.exe.config
-E:\ШАГ\Програмування\C# console\Money\Money\bin\Debug\Money.exe
-E:\ШАГ\Програмування\C# console\Money\Money\bin\Debug\Money.pdb
-E:\ШАГ\Програмування\C# console\Money\Money\obj\Debug\Money.csprojAssemblyReference.cache
-E:\ШАГ\Програмування\C# console\Money\Money\obj\Debug\Money.csproj.CoreCompileInputs.cache
-E:\ШАГ\Програмування\C# console\Money\Money\obj\Debug\Money.exe
-E:\ШАГ\Програмування\C# console\Money\Money\obj\Debug\Money.pdb
