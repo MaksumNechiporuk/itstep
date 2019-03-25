@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\Static\Static\bin\Debug\Static.exe.config
+E:\ШАГ\Програмування\C# console\Static\Static\bin\Debug\Static.exe
+E:\ШАГ\Програмування\C# console\Static\Static\bin\Debug\Static.pdb
+E:\ШАГ\Програмування\C# console\Static\Static\obj\Debug\Static.csprojAssemblyReference.cache
+E:\ШАГ\Програмування\C# console\Static\Static\obj\Debug\Static.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\Static\Static\obj\Debug\Static.exe
+E:\ШАГ\Програмування\C# console\Static\Static\obj\Debug\Static.pdb

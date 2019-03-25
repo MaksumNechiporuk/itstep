@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\1\3\bin\Debug\3.exe.config
+E:\ШАГ\Програмування\C# console\1\3\bin\Debug\3.exe
+E:\ШАГ\Програмування\C# console\1\3\bin\Debug\3.pdb
+E:\ШАГ\Програмування\C# console\1\3\obj\Debug\3.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\1\3\obj\Debug\3.exe
+E:\ШАГ\Програмування\C# console\1\3\obj\Debug\3.pdb
+E:\ШАГ\Програмування\C# console\1\3\obj\Debug\3.csprojAssemblyReference.cache

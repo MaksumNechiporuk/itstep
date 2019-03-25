@@ -1,0 +1,7 @@
+E:\ШАГ\Програмування\C# console\STRING\STRING1\bin\Debug\STRING1.exe.config
+E:\ШАГ\Програмування\C# console\STRING\STRING1\bin\Debug\STRING1.exe
+E:\ШАГ\Програмування\C# console\STRING\STRING1\bin\Debug\STRING1.pdb
+E:\ШАГ\Програмування\C# console\STRING\STRING1\obj\Debug\STRING1.csprojAssemblyReference.cache
+E:\ШАГ\Програмування\C# console\STRING\STRING1\obj\Debug\STRING1.csproj.CoreCompileInputs.cache
+E:\ШАГ\Програмування\C# console\STRING\STRING1\obj\Debug\STRING1.exe
+E:\ШАГ\Програмування\C# console\STRING\STRING1\obj\Debug\STRING1.pdb

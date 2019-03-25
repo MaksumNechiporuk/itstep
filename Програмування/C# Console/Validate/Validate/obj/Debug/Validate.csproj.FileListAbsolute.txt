@@ -1,0 +1,7 @@
+E:\ШАГ\C# Console\Validate\Validate\bin\Debug\Validate.exe.config
+E:\ШАГ\C# Console\Validate\Validate\bin\Debug\Validate.exe
+E:\ШАГ\C# Console\Validate\Validate\bin\Debug\Validate.pdb
+E:\ШАГ\C# Console\Validate\Validate\obj\Debug\Validate.csprojAssemblyReference.cache
+E:\ШАГ\C# Console\Validate\Validate\obj\Debug\Validate.csproj.CoreCompileInputs.cache
+E:\ШАГ\C# Console\Validate\Validate\obj\Debug\Validate.exe
+E:\ШАГ\C# Console\Validate\Validate\obj\Debug\Validate.pdb
