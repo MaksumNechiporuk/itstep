@@ -74,9 +74,10 @@ namespace ENGLISH
             {
                 LearnB.Visible = false;
                 LearnedB.Visible = false;
-                Test test = new Test();
+                Test test = new Test(notStudiedList,studyDictionaries);
                 test.Show();
                 this.Close();
+
             }
         }
     }
