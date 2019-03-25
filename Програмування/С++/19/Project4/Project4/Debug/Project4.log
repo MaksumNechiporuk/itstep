@@ -1,0 +1,27 @@
+﻿  Source.cpp
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(9): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(33): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(41): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(49): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(57): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(68): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(76): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(84): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(92): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(101): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(109): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(122): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(130): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(138): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(146): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(154): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(162): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(173): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(181): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(192): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(200): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(208): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(216): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(224): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+d:\шаг\програмування\с++\19\project4\project4\source.cpp(232): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  Project4.vcxproj -> D:\ШАГ\Програмування\С++\19\Project4\Debug\Project4.exe

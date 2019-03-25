@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace ENGLISH
 {
     public partial class ShowDictionary : Form
@@ -23,7 +22,6 @@ namespace ENGLISH
             InitializeComponent();
             notStudied = notStudieds;
         }
-
         private void ShowDictionary_Load(object sender, EventArgs e)
         {
            int  i = 0;
@@ -34,10 +32,8 @@ namespace ENGLISH
                 i++;
             }
         }
-
         private void ENGword_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
+        {         
             for (int i = 0; i < ENGword.Items.Count; i++)
             {
                 if (ENGword.GetSelected(i) == true)
@@ -47,21 +43,32 @@ namespace ENGLISH
                 }
             }
         }
-
         private void FindButton_Click(object sender, EventArgs e)
         {
-            int i = 0;
+            int i = 0, lastlastFoundIndex, lastFoundIndex=-1;
             try
             {
-                textBox1.Text = textBox1.Text;
-
                 if (comboBox1.Text == "English")
                 {
                     i = ENGword.FindString(textBox1.Text);
                 }
                 else
                 {
-                   i = UKRword.FindString(textBox1.Text);
+                    bool ch=false;
+                    for (i = lastFoundIndex + 1; i < UKRword.Items.Count; i++)
+                    {
+                        var currVal = UKRword.Items[i].ToString();
+                        if (currVal.IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) > -1)
+                        {
+                            UKRword.SetSelected(i, true);
+                            lastlastFoundIndex = i;
+                            ch = true;
+                            break;
+                        }
+                       
+                    }
+                    if (ch == false)
+                        i = -1;
                 }
                 ENGword.SetSelected(i, true);
                 UKRword.SetSelected(i, true);
@@ -72,10 +79,5 @@ namespace ENGLISH
                     MessageBox.Show("Not found!!!");
             }
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
     }
 }

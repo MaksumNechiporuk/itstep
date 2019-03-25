@@ -11,3 +11,16 @@ D:\ШАГ\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.p
 D:\ШАГ\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ShowDictionary.resources
 D:\ШАГ\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ChooseWords.resources
 D:\ШАГ\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Test.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\ENGLISH.exe.config
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\ENGLISH.exe
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\ENGLISH.pdb
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csprojAssemblyReference.cache
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ChooseWords.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Form1.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Properties.Resources.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ShowDictionary.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Test.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csproj.GenerateResource.cache
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csproj.CoreCompileInputs.cache
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.exe
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.pdb

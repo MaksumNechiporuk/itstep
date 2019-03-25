@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\user\source\repos\project2\project2\source.cpp(14): warning C4129: /: неизвестная escape-последовательность
+c:\users\user\source\repos\project2\project2\source.cpp(15): warning C4129: /: неизвестная escape-последовательность
+  Project2.vcxproj -> C:\Users\User\source\repos\Project2\Debug\Project2.exe
