@@ -79,5 +79,10 @@ namespace ENGLISH
                     MessageBox.Show("Not found!!!");
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+        }
     }
 }

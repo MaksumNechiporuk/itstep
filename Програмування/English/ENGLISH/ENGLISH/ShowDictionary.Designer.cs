@@ -31,7 +31,6 @@
             this.ENGword = new System.Windows.Forms.ListBox();
             this.UKRword = new System.Windows.Forms.ListBox();
             this.FindButton = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -68,15 +67,6 @@
             this.FindButton.Visible = false;
             this.FindButton.Click += new System.EventHandler(this.FindButton_Click);
             // 
-            // AddButton
-            // 
-            this.AddButton.Location = new System.Drawing.Point(1018, 462);
-            this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(150, 58);
-            this.AddButton.TabIndex = 3;
-            this.AddButton.Text = "Add";
-            this.AddButton.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Window;
@@ -98,15 +88,15 @@
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "English";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // ShowDictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 551);
+            this.ClientSize = new System.Drawing.Size(1017, 551);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.AddButton);
             this.Controls.Add(this.FindButton);
             this.Controls.Add(this.UKRword);
             this.Controls.Add(this.ENGword);
@@ -123,7 +113,6 @@
         private System.Windows.Forms.ListBox ENGword;
         private System.Windows.Forms.ListBox UKRword;
         private System.Windows.Forms.Button FindButton;
-        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
     }
