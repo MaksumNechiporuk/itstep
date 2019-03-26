@@ -10,20 +10,27 @@ namespace ENGLISH
     public class StudyDictionary : Dictionary
     {
 
-        private int count;
+ 
+        public int Count { get; set; }
         public void AddWord(List<NotStudiedDictionary> notStudieds,int i)
         {
             engWord= notStudieds[i].GetWordsEng();
             ukrWord= notStudieds[i].GetWordsUkr();
-            count = 0;
+            Count = 0;
         }
         public void WriteToFile()
         {
-            if(count==3)
+            if(Count==3)
             {
                 StreamWriter writer = new StreamWriter("Learned.txt");
                 writer.WriteLine(engWord + " - " + ukrWord + "\n");
             }
+        }
+        public void Swap()
+        {
+            string t = engWord;
+            engWord = ukrWord;
+            ukrWord = t;
         }
         public string GetWordsEng()
         {

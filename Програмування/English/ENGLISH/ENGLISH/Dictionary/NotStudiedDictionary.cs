@@ -8,7 +8,12 @@ namespace ENGLISH
 {
   public   class NotStudiedDictionary : Dictionary
     {
-
+        public void Swap()
+        {
+            string t = engWord;
+            engWord = ukrWord;
+            ukrWord = t;
+        }
         public NotStudiedDictionary AddWord(string words)
         {
             bool c = true;

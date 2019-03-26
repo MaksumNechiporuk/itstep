@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ENGLISH
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries= new List<StudyDictionary>();
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }

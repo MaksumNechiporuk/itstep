@@ -12,7 +12,7 @@ namespace ENGLISH
         protected string engWord { get; set; }
         protected string ukrWord { get; set; }
 
-
+      
 
     }
 }
