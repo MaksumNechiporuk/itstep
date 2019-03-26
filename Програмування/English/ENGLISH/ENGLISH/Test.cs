@@ -56,6 +56,7 @@ namespace ENGLISH
         int RandomWord(int i)
         {
             Random random = new Random();
+            Thread.Sleep(20);
             return random.Next(0, i);
         }
         void SelectWord()
@@ -78,8 +79,6 @@ namespace ENGLISH
                 MessageBox.Show("Errpr");
                 Swap();
                 SelectWord();
-
-
             }
 
         }
@@ -99,7 +98,7 @@ namespace ENGLISH
                     {
                         if (words[i] == words[k])
                         {
-                            Thread.Sleep(20);
+                            
                             words[i] = notStudiedList[RandomWord(notStudiedList.Count)].GetWordsUkr();
                         }
                         k++;
@@ -116,8 +115,7 @@ namespace ENGLISH
                 while (true)
                 {
                     int j = RandomWord(4);
-                    Thread.Sleep(20);
-
+                   
                     if (words[j] != null)
                     {
                         if (i == 0)
