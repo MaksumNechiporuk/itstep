@@ -25,5 +25,13 @@ namespace ENGLISH
                 writer.WriteLine(engWord + " - " + ukrWord + "\n");
             }
         }
+        public string GetWordsEng()
+        {
+            return engWord;
+        }
+        public string GetWordsUkr()
+        {
+            return ukrWord;
+        }
     }
 }
