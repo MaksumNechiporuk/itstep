@@ -29,7 +29,7 @@ namespace ENGLISH
 
         private void LearnB_Click(object sender, EventArgs e)
         {
-            try
+          //  try
             {
                 StudyDictionary study = new StudyDictionary();
                 study.AddWord(notStudiedList, i);
@@ -39,9 +39,9 @@ namespace ENGLISH
                 label1.Text = "Select "+ (5-studyDictionaries.Count()).ToString() + " words";
                 RandomWord();
             }
-            catch
+           // catch(Exception ex)
             {
-                MessageBox.Show("You know all words");
+               // MessageBox.Show("You know all words");//+ex.Message);
             }
         }
 

@@ -7,20 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace ENGLISH
 {
     public partial class Test : Form
     {
-        bool c = false;
         List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries = new List<StudyDictionary>();
         int word;
-        int i = 0;
-        int pos=0;
-        int[] arr;
         string[] words;
+        List<int> arr = new List<int>() { 0, 1, 2, 3, 4 };
+
         public Test(List<NotStudiedDictionary> notStudieds, List<StudyDictionary> studies)
         {
             InitializeComponent();
@@ -50,8 +50,6 @@ namespace ENGLISH
         private void button4_Click(object sender, EventArgs e)
         {
             CheckAnswer(button4);
-           
-
         }
         int RandomWord(int i)
         {
@@ -60,21 +58,9 @@ namespace ENGLISH
         }
         void SelectWord()
         {
-            word = RandomWord(studyDictionaries.Count);
-            arr = new int[5] { 0, 0, 0, 0, 0 };
-            arr[i] = word;
-            int j = 0;
-            while (true)
-            {
-                if (arr[j] == word)
-                {
-                    word = RandomWord(studyDictionaries.Count);
-                }
-                else break;
-                j++;
-                i++;
-            }
-          
+            int t = RandomWord(arr.Count);
+            word =arr[t];
+            arr.RemoveAt(t);
             labelWord.Text = studyDictionaries[word].GetWordsEng();
             words = new string[4];
             words[RandomWord(4)] = studyDictionaries[word].GetWordsUkr();
@@ -99,6 +85,7 @@ namespace ENGLISH
         }
         void TextButton()
         {
+
             for (int i = 0; i < 4; i++)
             {
                 while (true)
@@ -119,20 +106,40 @@ namespace ENGLISH
                     }
                 }
             }
+            button1.BackColor = Color.White;
+            button2.BackColor = Color.White;
+            button3.BackColor = Color.White;
+            button4.BackColor = Color.White;
+
 
         }
 
-        void CheckAnswer(Button b)
+        void  CheckAnswer(Button b)
         {
-            if(b.Text==studyDictionaries[word].GetWordsUkr())
+            if (b.Text == studyDictionaries[word].GetWordsUkr())
             {
                 b.BackColor = Color.Green;
+                func();
                 SelectWord();
                 TextButton();
+
             }
             else b.BackColor = Color.Red;
-          //  Thread.Sleep(5000);
-            //b.BackColor = Color.White;
+            func();
+            b.BackColor = Color.White;
+        }
+        public void func()
+        {
+            CancellationTokenSource source = new CancellationTokenSource();
+            var t = Task.Run(async delegate
+            {
+                await Task.Delay(TimeSpan.FromSeconds(1), source.Token);
+                return 42;
+            });
+            t.Wait();
+        }
+        private void Test_Load(object sender, EventArgs e)
+        {
 
         }
     }
