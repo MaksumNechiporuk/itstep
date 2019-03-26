@@ -34,7 +34,8 @@
             // 
             // OpenD
             // 
-            this.OpenD.Location = new System.Drawing.Point(81, 96);
+            this.OpenD.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OpenD.Location = new System.Drawing.Point(81, 78);
             this.OpenD.Name = "OpenD";
             this.OpenD.Size = new System.Drawing.Size(162, 76);
             this.OpenD.TabIndex = 0;
@@ -44,7 +45,8 @@
             // 
             // OpenStudy
             // 
-            this.OpenStudy.Location = new System.Drawing.Point(81, 235);
+            this.OpenStudy.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OpenStudy.Location = new System.Drawing.Point(81, 239);
             this.OpenStudy.Name = "OpenStudy";
             this.OpenStudy.Size = new System.Drawing.Size(162, 76);
             this.OpenStudy.TabIndex = 1;
@@ -52,14 +54,14 @@
             this.OpenStudy.UseVisualStyleBackColor = true;
             this.OpenStudy.Click += new System.EventHandler(this.OpenStudy_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 632);
+            this.ClientSize = new System.Drawing.Size(322, 427);
             this.Controls.Add(this.OpenStudy);
             this.Controls.Add(this.OpenD);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
