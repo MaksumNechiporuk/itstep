@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Threading.Tasks;
 
 using System.Windows.Forms;
 
@@ -15,9 +14,12 @@ namespace ENGLISH
 {
     public partial class Test : Form
     {
-        List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
+        Funcs funcs = new Funcs();
+          List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries = new List<StudyDictionary>();
         int word;
+        int i = 0;
+        int t = 0;
         string[] words;
         List<int> arr = new List<int>() { 0, 1, 2, 3, 4 };
 
@@ -31,13 +33,13 @@ namespace ENGLISH
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            CheckAnswer(button2);
+          CheckAnswer(button2);
 
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+           
             CheckAnswer(button1);
 
         }
@@ -54,16 +56,38 @@ namespace ENGLISH
         int RandomWord(int i)
         {
             Random random = new Random();
+            Thread.Sleep(20);
             return random.Next(0, i);
         }
         void SelectWord()
         {
-            int t = RandomWord(arr.Count);
-            word =arr[t];
-            arr.RemoveAt(t);
-            labelWord.Text = studyDictionaries[word].GetWordsEng();
+            if (studyDictionaries[word].Count>0&&i==0)
+            {
+                arr.RemoveAt(t);
+            }
+            try
+            {
+                i = 0;
+                t = RandomWord(arr.Count);
+                word = arr[t];
+               
+                funcr();
+            }
+            catch
+            {
+                i = -1;
+                MessageBox.Show("Errpr");
+                Swap();
+                SelectWord();
+            }
+
+        }
+        void funcr()
+        {
             words = new string[4];
             words[RandomWord(4)] = studyDictionaries[word].GetWordsUkr();
+            labelWord.Text = studyDictionaries[word].GetWordsEng();
+
             for (int i = 0; i < words.Length; i++)
             {
                 if (words[i] == null)
@@ -74,9 +98,9 @@ namespace ENGLISH
                     {
                         if (words[i] == words[k])
                         {
-                            Thread.Sleep(20);
+                            
                             words[i] = notStudiedList[RandomWord(notStudiedList.Count)].GetWordsUkr();
-                        }                      
+                        }
                         k++;
                         if (k == 4) break;
                     }
@@ -91,6 +115,7 @@ namespace ENGLISH
                 while (true)
                 {
                     int j = RandomWord(4);
+                   
                     if (words[j] != null)
                     {
                         if (i == 0)
@@ -110,37 +135,40 @@ namespace ENGLISH
             button2.BackColor = Color.White;
             button3.BackColor = Color.White;
             button4.BackColor = Color.White;
-
-
         }
-
-        void  CheckAnswer(Button b)
+        public void CheckAnswer(Button b)
         {
             if (b.Text == studyDictionaries[word].GetWordsUkr())
             {
+                if (i == 0)
+                studyDictionaries[word].Count++;
                 b.BackColor = Color.Green;
-                func();
+                funcs.func();
                 SelectWord();
                 TextButton();
-
             }
-            else b.BackColor = Color.Red;
-            func();
+            else
+            {
+                b.BackColor = Color.Red;
+                i++;
+            }
+            funcs.func();
             b.BackColor = Color.White;
         }
-        public void func()
+       void Swap()
         {
-            CancellationTokenSource source = new CancellationTokenSource();
-            var t = Task.Run(async delegate
+            foreach (var item in studyDictionaries)
             {
-                await Task.Delay(TimeSpan.FromSeconds(1), source.Token);
-                return 42;
-            });
-            t.Wait();
-        }
-        private void Test_Load(object sender, EventArgs e)
-        {
-
+                item.Swap();
+            }
+            foreach (var item in notStudiedList)
+            {
+                item.Swap();
+            }
+            arr.Clear();
+            arr = new List<int> { 0, 1, 2, 3, 4 };
+          
+          
         }
     }
 }

@@ -29,7 +29,6 @@ D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\EN
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\ENGLISH.pdb
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csprojAssemblyReference.cache
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ChooseWords.resources
-D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Form1.resources
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Properties.Resources.resources
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ShowDictionary.resources
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Test.resources
@@ -37,3 +36,4 @@ D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\EN
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csproj.CoreCompileInputs.cache
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.exe
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.pdb
+D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Main.resources
