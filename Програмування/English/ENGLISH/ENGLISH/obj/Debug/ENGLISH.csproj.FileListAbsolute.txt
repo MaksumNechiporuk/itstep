@@ -16,7 +16,6 @@ E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\EN
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\bin\Debug\ENGLISH.pdb
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.csprojAssemblyReference.cache
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ChooseWords.resources
-E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Form1.resources
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Properties.Resources.resources
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.ShowDictionary.resources
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Test.resources
@@ -37,3 +36,4 @@ D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\EN
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.exe
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.pdb
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Main.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Main.resources
