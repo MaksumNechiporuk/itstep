@@ -12,7 +12,20 @@ namespace ENGLISH
         protected string engWord { get; set; }
         protected string ukrWord { get; set; }
 
-      
+        public void Swap()
+        {
+            string t = engWord;
+            engWord = ukrWord;
+            ukrWord = t;
+        }
+        public string GetWordsEng()
+        {
+            return engWord;
+        }
+        public string GetWordsUkr()
+        {
+            return ukrWord;
+        }
 
     }
 }

@@ -23,7 +23,7 @@ namespace ENGLISH
 
         private void OpenD_Click(object sender, EventArgs e)
         {
-            ShowDictionary showDictionary = new ShowDictionary(notStudiedList);
+            ShowDictionary showDictionary = new ShowDictionary();
             showDictionary.Show();
         }
 
@@ -31,7 +31,6 @@ namespace ENGLISH
         {
             NotStudiedDictionary notStudied = new NotStudiedDictionary();
             notStudiedList.Add(notStudied);
-            int i = 0;
             using (StreamReader sr = new StreamReader("Dictionary.txt", System.Text.Encoding.Default))
             {
                 string line;
@@ -41,11 +40,13 @@ namespace ENGLISH
                     notStudiedList.Add(notStudied);
                     notStudied = new NotStudiedDictionary();
                 }
+                notStudiedList.RemoveAt(0);
             }
         }
 
         private void OpenStudy_Click(object sender, EventArgs e)
         {
+            studyDictionaries.Clear();
             ChooseWords showDictionary = new ChooseWords(notStudiedList, studyDictionaries);
             showDictionary.Show();
         }

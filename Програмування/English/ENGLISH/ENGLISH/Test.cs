@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -15,18 +16,32 @@ namespace ENGLISH
     public partial class Test : Form
     {
         Funcs funcs = new Funcs();
-          List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
+        List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries = new List<StudyDictionary>();
-        int word;
+        int posWord;
         int i = 0;
         int t = 0;
         string[] words;
-        List<int> arr = new List<int>() { 0, 1, 2, 3, 4 };
-
-        public Test(List<NotStudiedDictionary> notStudieds, List<StudyDictionary> studies)
+        List<int> arr = new List<int>();
+        public Test( List<StudyDictionary> studies)
         {
             InitializeComponent();
-            notStudiedList = notStudieds;
+            NotStudiedDictionary notStudied = new NotStudiedDictionary();
+            notStudiedList.Add(notStudied);
+            using (StreamReader sr = new StreamReader("BaseDictionary.txt", System.Text.Encoding.Default))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    notStudied = notStudied.AddWord(line);
+                    notStudiedList.Add(notStudied);
+                    notStudied = new NotStudiedDictionary();
+                }
+            }
+            for (int l=0;l<studyDictionaries.Count;l++)
+            {
+                arr.Add(l);
+            }
             studyDictionaries = studies;
             SelectWord();
             TextButton();
@@ -61,7 +76,7 @@ namespace ENGLISH
         }
         void SelectWord()
         {
-            if (studyDictionaries[word].Count>0&&i==0)
+            if (studyDictionaries[posWord].Count>0&&i==0)
             {
                 arr.RemoveAt(t);
             }
@@ -69,24 +84,48 @@ namespace ENGLISH
             {
                 i = 0;
                 t = RandomWord(arr.Count);
-                word = arr[t];
+                posWord = arr[t];
                
-                funcr();
+                SelectWords();
             }
             catch
             {
-                i = -1;
-                MessageBox.Show("Errpr");
-                Swap();
-                SelectWord();
-            }
+                int c = 0;
+                foreach (var item in studyDictionaries)
+                {
+                    if(item.Count==1)
+                    {
+                        c++;
+                    }
+                }
+                if (c == studyDictionaries.Count)
+                {
+                    foreach (var item in studyDictionaries)
+                    {
+                        item.WriteToFile();
+
+                    }
+
+                    MessageBox.Show("You remember all words");
+                    Swap();
+                    SelectWord();
+                    Close();
+
+                }
+                else
+                {
+                    i = -1;
+                    Swap();
+                    SelectWord();
+                }
+                }
 
         }
-        void funcr()
+        void SelectWords()
         {
             words = new string[4];
-            words[RandomWord(4)] = studyDictionaries[word].GetWordsUkr();
-            labelWord.Text = studyDictionaries[word].GetWordsEng();
+            words[RandomWord(4)] = studyDictionaries[posWord].GetWordsUkr();
+            labelWord.Text = studyDictionaries[posWord].GetWordsEng();
 
             for (int i = 0; i < words.Length; i++)
             {
@@ -138,10 +177,10 @@ namespace ENGLISH
         }
         public void CheckAnswer(Button b)
         {
-            if (b.Text == studyDictionaries[word].GetWordsUkr())
+            if (b.Text == studyDictionaries[posWord].GetWordsUkr())
             {
                 if (i == 0)
-                studyDictionaries[word].Count++;
+                studyDictionaries[posWord].Count++;
                 b.BackColor = Color.Green;
                 funcs.func();
                 SelectWord();
@@ -166,9 +205,10 @@ namespace ENGLISH
                 item.Swap();
             }
             arr.Clear();
-            arr = new List<int> { 0, 1, 2, 3, 4 };
-          
-          
+            for (int i = 0; i < studyDictionaries.Count; i++)
+            {
+                arr.Add(i);
+            }
         }
     }
 }

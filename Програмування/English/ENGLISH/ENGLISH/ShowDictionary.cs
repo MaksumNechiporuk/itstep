@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,78 +13,67 @@ namespace ENGLISH
 {
     public partial class ShowDictionary : Form
     {
-        List<NotStudiedDictionary> notStudied = new List<NotStudiedDictionary>();
+        List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
+       
         public ShowDictionary()
         {
             InitializeComponent();
-
-        }
-        public ShowDictionary(List<NotStudiedDictionary> notStudieds)
-        {
-            InitializeComponent();
-            notStudied = notStudieds;
+            NotStudiedDictionary notStudied = new NotStudiedDictionary();
+            notStudiedList.Add(notStudied);
+            using (StreamReader sr = new StreamReader("BaseDictionary.txt", System.Text.Encoding.Default))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    notStudied = notStudied.AddWord(line);
+                    notStudiedList.Add(notStudied);
+                    notStudied = new NotStudiedDictionary();
+                }
+                notStudiedList.RemoveAt(0);
+            }
         }
         private void ShowDictionary_Load(object sender, EventArgs e)
         {
-           int  i = 0;
-            foreach (var item in notStudied)
+           int  i = 1;
+          
+
+            foreach (var item in notStudiedList)
             {
-                ENGword.Items.Add(item.GetWordsEng());
-                UKRword.Items.Add(item.GetWordsUkr());
+                WordGV.Rows.Add(i, item.GetWordsEng(), item.GetWordsUkr());
+
+                
                 i++;
             }
         }
-        private void ENGword_SelectedIndexChanged(object sender, EventArgs e)
-        {         
-            for (int i = 0; i < ENGword.Items.Count; i++)
-            {
-                if (ENGword.GetSelected(i) == true)
-                {
-                    UKRword.SetSelected(i, true);
-                    break;
-                }
-            }
-        }
+      
         private void FindButton_Click(object sender, EventArgs e)
         {
-            int i = 0, lastlastFoundIndex, lastFoundIndex=-1;
-            try
-            {
-                if (comboBox1.Text == "English")
-                {
-                    i = ENGword.FindString(textBox1.Text);
-                }
-                else
-                {
-                    bool ch=false;
-                    for (i = lastFoundIndex + 1; i < UKRword.Items.Count; i++)
+            
+          
+                for (int k = 0; k < WordGV.RowCount; k++)
                     {
-                        var currVal = UKRword.Items[i].ToString();
-                        if (currVal.IndexOf(textBox1.Text, StringComparison.OrdinalIgnoreCase) > -1)
-                        {
-                            UKRword.SetSelected(i, true);
-                            lastlastFoundIndex = i;
-                            ch = true;
-                            break;
-                        }
-                       
-                    }
-                    if (ch == false)
-                        i = -1;
-                }
-                ENGword.SetSelected(i, true);
-                UKRword.SetSelected(i, true);
-            }
-            catch
-            {
-                if (i == -1)
-                    MessageBox.Show("Not found!!!");
-            }
+                        WordGV.Rows[k].Selected = false;
+                            for (int j = 0; j < WordGV.ColumnCount; j++)
+                            if (WordGV.Rows[k].Cells[j].Value != null)
+                                if (WordGV.Rows[k].Cells[j].Value.ToString().Contains(textBox1.Text))
+                                {
+                                    WordGV.Rows[k].Selected = true;
+                                    WordGV.Rows[k].DefaultCellStyle.BackColor = Color.Red;
+                                break;
+                                }
+
+                    }       
+                
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.Clear();
+        }
+
+        private void WordGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,68 @@
-﻿case  -  справа
-
-side  -  сторона
-
-force  -  сила
-
+﻿research  -  дослідження
+head  -  голова
+job  -  робота
+home  -  дім
+problem  -  проблема
+kind  -  доброзичливий
+war  -  війна
+air  -  повітря
+book  -  книга
+job  -  робота
+change  -  зміна
+girl  -  дівчина
+day  -  день
+problem  -  проблема
+name  -  ім’я
+information  -  інформація
+war  -  війна
+air  -  повітря
+end  -  кінець
+school  -  школа
+woman  -  жінка
+time  -  час
+time  -  час
+life  -  життя
+thing  -  річ
+time  -  час
+man  -  чоловік
+time  -  час
+life  -  життя
+thing  -  річ
+ чоловік - man 
+ річ - thing 
+ жінка - woman 
+ інформація - information 
+ люди - people 
+ час - time 
+ люди - people 
+ час - time 
+ інформація - information 
+ річ - thing 
+ річ - thing 
+ люди - people 
+ інформація - information 
+ час - time 
+ час - time 
+ річ - thing 
+ інформація - information 
+ люди - people 
+ річ - thing 
+ люди - people 
+ інформація - information 
+ час - time 
+ люди - people 
+ інформація - information 
+ час - time 
+ річ - thing 
+ інформація - information 
+ люди - people 
+ річ - thing 
+ час - time 
+ люди - people 
+ річ - thing 
+ час - time 
+ інформація - information 
+ час - time 
+ річ - thing 
+ люди - people 
+ інформація - information 

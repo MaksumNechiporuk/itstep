@@ -20,25 +20,12 @@ namespace ENGLISH
         }
         public void WriteToFile()
         {
-            if(Count==3)
-            {
-                StreamWriter writer = new StreamWriter("Learned.txt");
-                writer.WriteLine(engWord + " - " + ukrWord + "\n");
-            }
+
+            StreamWriter writer = new StreamWriter("Learned.txt", true);
+            writer.WriteLine(engWord + " - " + ukrWord );
+            writer.Close();
+
         }
-        public void Swap()
-        {
-            string t = engWord;
-            engWord = ukrWord;
-            ukrWord = t;
-        }
-        public string GetWordsEng()
-        {
-            return engWord;
-        }
-        public string GetWordsUkr()
-        {
-            return ukrWord;
-        }
+      
     }
 }

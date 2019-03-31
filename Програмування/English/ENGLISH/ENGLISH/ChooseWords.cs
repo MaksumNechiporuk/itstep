@@ -24,12 +24,19 @@ namespace ENGLISH
         }
         private void ChooseWords_Load(object sender, EventArgs e)
         {
-            RandomWord();
+            try {
+                RandomWord();
+            }
+            catch
+            {
+                MessageBox.Show("You know all words");
+                Close();
+            }
         }
 
         private void LearnB_Click(object sender, EventArgs e)
         {
-          //  try
+            try
             {
                 StudyDictionary study = new StudyDictionary();
                 study.AddWord(notStudiedList, i);
@@ -39,9 +46,13 @@ namespace ENGLISH
                 label1.Text = "Select "+ (5-studyDictionaries.Count()).ToString() + " words";
                 RandomWord();
             }
-           // catch(Exception ex)
+            catch
             {
-               // MessageBox.Show("You know all words");//+ex.Message);
+                LearnB.Visible = false;
+                LearnedB.Visible = false;
+               Test test = new Test( studyDictionaries);
+               test.Show();
+                this.Close();
             }
         }
 
@@ -74,7 +85,7 @@ namespace ENGLISH
             {
                 LearnB.Visible = false;
                 LearnedB.Visible = false;
-                Test test = new Test(notStudiedList,studyDictionaries);
+                Test test = new Test(studyDictionaries);
                 test.Show();
                 this.Close();
 
