@@ -37,3 +37,4 @@ D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\EN
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.pdb
 D:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Main.resources
 E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Main.resources
+E:\ШАГ\itstep\Програмування\English\ENGLISH\ENGLISH\obj\Debug\ENGLISH.Authorization.resources

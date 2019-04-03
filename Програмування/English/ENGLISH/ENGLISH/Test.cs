@@ -18,14 +18,16 @@ namespace ENGLISH
         Funcs funcs = new Funcs();
         List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries = new List<StudyDictionary>();
+        DirectoryInfo directory;
         int posWord;
         int i = 0;
         int t = 0;
         string[] words;
         List<int> arr = new List<int>();
-        public Test( List<StudyDictionary> studies)
+        public Test( List<StudyDictionary> studies,DirectoryInfo info)
         {
             InitializeComponent();
+            directory = info;
             NotStudiedDictionary notStudied = new NotStudiedDictionary();
             notStudiedList.Add(notStudied);
             using (StreamReader sr = new StreamReader("BaseDictionary.txt", System.Text.Encoding.Default))
@@ -90,10 +92,11 @@ namespace ENGLISH
             }
             catch
             {
+                MessageBox.Show("sdc");
                 int c = 0;
                 foreach (var item in studyDictionaries)
                 {
-                    if(item.Count==1)
+                    if(item.Count==5)
                     {
                         c++;
                     }
@@ -102,7 +105,7 @@ namespace ENGLISH
                 {
                     foreach (var item in studyDictionaries)
                     {
-                        item.WriteToFile();
+                        item.WriteToFile(directory);
 
                     }
 
@@ -209,6 +212,11 @@ namespace ENGLISH
             {
                 arr.Add(i);
             }
+        }
+
+        private void Test_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

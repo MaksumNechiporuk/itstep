@@ -18,10 +18,10 @@ namespace ENGLISH
             ukrWord= notStudieds[i].GetWordsUkr();
             Count = 0;
         }
-        public void WriteToFile()
+        public void WriteToFile(DirectoryInfo info)
         {
 
-            StreamWriter writer = new StreamWriter("Learned.txt", true);
+            StreamWriter writer = new StreamWriter(info + "\\Learned.txt", true);
             writer.WriteLine(engWord + " - " + ukrWord );
             writer.Close();
 

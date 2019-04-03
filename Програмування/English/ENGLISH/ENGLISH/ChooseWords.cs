@@ -15,10 +15,12 @@ namespace ENGLISH
     {
         List<NotStudiedDictionary> notStudiedList = new List<NotStudiedDictionary>();
         List<StudyDictionary> studyDictionaries = new List<StudyDictionary>();
+        DirectoryInfo directory;
         int i = 0;
-        public ChooseWords(List<NotStudiedDictionary> notStudieds,List<StudyDictionary> studies)
+        public ChooseWords(List<NotStudiedDictionary> notStudieds,List<StudyDictionary> studies,DirectoryInfo info)
         {
             InitializeComponent();
+            directory = info;
             notStudiedList = notStudieds;
             studyDictionaries = studies;
         }
@@ -50,9 +52,18 @@ namespace ENGLISH
             {
                 LearnB.Visible = false;
                 LearnedB.Visible = false;
-               Test test = new Test( studyDictionaries);
+               Test test = new Test( studyDictionaries, directory);
                test.Show();
-                this.Close();
+
+                StreamWriter writer = new StreamWriter(directory + "\\Dictionary.txt", false, System.Text.Encoding.Default);
+                foreach (var item in notStudiedList)
+                {
+                    writer.WriteLine(item.GetWordsEng() + " - " + item.GetWordsUkr());
+                }
+
+
+                writer.Close();
+                Close();
             }
         }
 
@@ -60,7 +71,7 @@ namespace ENGLISH
         {
             try
             {
-                StreamWriter writer = new StreamWriter("Learned.txt", true);
+                StreamWriter writer = new StreamWriter(directory + "\\Learned.txt", true);
                 writer.WriteLine(ENGlabel.Text + " - " + UKRlabel.Text + "\n");
                 writer.Close();
                 notStudiedList.RemoveAt(i);
@@ -85,8 +96,17 @@ namespace ENGLISH
             {
                 LearnB.Visible = false;
                 LearnedB.Visible = false;
-                Test test = new Test(studyDictionaries);
+                Test test = new Test(studyDictionaries, directory);
                 test.Show();
+
+                StreamWriter writer = new StreamWriter(directory + "\\Dictionary.txt", false, System.Text.Encoding.Default);
+                foreach (var item in notStudiedList)
+                {
+                    writer.WriteLine(item.GetWordsEng() + " - " + item.GetWordsUkr());
+                } 
+              
+             
+                writer.Close();
                 this.Close();
 
             }

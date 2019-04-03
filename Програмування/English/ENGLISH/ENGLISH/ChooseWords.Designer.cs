@@ -49,7 +49,7 @@
             // 
             this.UKRlabel.AutoSize = true;
             this.UKRlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UKRlabel.Location = new System.Drawing.Point(658, 216);
+            this.UKRlabel.Location = new System.Drawing.Point(607, 216);
             this.UKRlabel.Name = "UKRlabel";
             this.UKRlabel.Size = new System.Drawing.Size(115, 39);
             this.UKRlabel.TabIndex = 1;
@@ -57,9 +57,9 @@
             // 
             // LearnedB
             // 
-            this.LearnedB.Location = new System.Drawing.Point(31, 434);
+            this.LearnedB.Location = new System.Drawing.Point(31, 409);
             this.LearnedB.Name = "LearnedB";
-            this.LearnedB.Size = new System.Drawing.Size(75, 23);
+            this.LearnedB.Size = new System.Drawing.Size(118, 48);
             this.LearnedB.TabIndex = 2;
             this.LearnedB.Text = "Learned";
             this.LearnedB.UseVisualStyleBackColor = true;
@@ -67,12 +67,11 @@
             // 
             // LearnB
             // 
-            this.LearnB.Location = new System.Drawing.Point(665, 434);
+            this.LearnB.Location = new System.Drawing.Point(614, 409);
             this.LearnB.Name = "LearnB";
-            this.LearnB.Size = new System.Drawing.Size(75, 23);
+            this.LearnB.Size = new System.Drawing.Size(126, 48);
             this.LearnB.TabIndex = 3;
             this.LearnB.Text = "To learn";
-            this.LearnB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.LearnB.UseVisualStyleBackColor = true;
             this.LearnB.Click += new System.EventHandler(this.LearnB_Click);
             // 

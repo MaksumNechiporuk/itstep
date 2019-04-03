@@ -53,12 +53,13 @@ namespace ENGLISH
                 for (int k = 0; k < WordGV.RowCount; k++)
                     {
                         WordGV.Rows[k].Selected = false;
-                            for (int j = 0; j < WordGV.ColumnCount; j++)
-                            if (WordGV.Rows[k].Cells[j].Value != null)
-                                if (WordGV.Rows[k].Cells[j].Value.ToString().Contains(textBox1.Text))
-                                {
-                                    WordGV.Rows[k].Selected = true;
-                                    WordGV.Rows[k].DefaultCellStyle.BackColor = Color.Red;
+                for (int j = 0; j < WordGV.ColumnCount; j++)
+                    if (WordGV.Rows[k].Cells[j].Value != null)
+                        if (WordGV.Rows[k].Cells[j].Value.ToString().Contains(textBox1.Text))
+                        {
+                            WordGV.Rows[k].Selected = true;
+                            
+                            WordGV.Rows[k].DefaultCellStyle.BackColor = Color.Red;
                                 break;
                                 }
 

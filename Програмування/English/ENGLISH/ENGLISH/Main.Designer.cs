@@ -69,9 +69,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button OpenD;
-        private System.Windows.Forms.Button OpenStudy;
+        public System.Windows.Forms.Button OpenD;
+        public System.Windows.Forms.Button OpenStudy;
     }
 }
 

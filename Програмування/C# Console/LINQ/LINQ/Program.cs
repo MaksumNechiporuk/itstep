@@ -40,10 +40,27 @@ namespace LINQ
                 Console.WriteLine($"{item.Name}  {item.Surname}  {item.Salary}");
             }
             Console.WriteLine();
+            HeaderShow("Anonim object");
 
-            var res5 = people.Select(x => new {FirmName ="My cool firm",FIO=x.Name+" "+x.Surname,TotalSalary=people.Select(r=>r.Salary*r.AmountMonth),AVGSalary=(int)people.Average(t=>t.Salary)});
+            var anonim = people.Select(x => new {FirmName ="My cool firm",FIO=x.Name+" "+x.Surname,TotalSalary=(x.Salary*x.AmountMonth),AVGSalary=(int)people.Average(t=>t.Salary)});
+            foreach (var item in anonim)
+            {
+                Console.WriteLine($"{item.FirmName}  {item.FIO}      {item.AVGSalary}    {item.TotalSalary}");
+            }
+            Console.WriteLine();
 
-        }
+            HeaderShow("GROUPING");
+            var groups =anonim.GroupBy(x => x.AVGSalary);
+            foreach (var group in groups)
+            {         
+                Console.WriteLine(group.Key);
+                foreach (var item in group)
+                {
+                    Console.WriteLine($" {item}");
+                }
+            }
+        
+    }
         static void HeaderShow(string str)
         {
             Console.WriteLine(str);
