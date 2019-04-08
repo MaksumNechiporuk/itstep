@@ -34,6 +34,7 @@
             this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Engword_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ukrword_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.WordGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,6 @@
             this.WordGV.ReadOnly = true;
             this.WordGV.Size = new System.Drawing.Size(727, 512);
             this.WordGV.TabIndex = 6;
-            this.WordGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WordGV_CellContentClick);
             // 
             // number
             // 
@@ -94,11 +94,22 @@
             this.ukrword_.Name = "ukrword_";
             this.ukrword_.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(852, 370);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Search for a word";
+            // 
             // ShowDictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 551);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.WordGV);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.FindButton);
@@ -118,5 +129,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn number;
         private System.Windows.Forms.DataGridViewTextBoxColumn Engword_;
         private System.Windows.Forms.DataGridViewTextBoxColumn ukrword_;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -101,6 +101,9 @@ namespace ENGLISH
             }
         }
 
-        
+        private void Authorization_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -72,9 +72,6 @@ namespace ENGLISH
             textBox1.Clear();
         }
 
-        private void WordGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
     }
 }

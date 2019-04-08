@@ -57,6 +57,7 @@
             // 
             // LearnedB
             // 
+            this.LearnedB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LearnedB.Location = new System.Drawing.Point(31, 409);
             this.LearnedB.Name = "LearnedB";
             this.LearnedB.Size = new System.Drawing.Size(118, 48);
@@ -67,6 +68,7 @@
             // 
             // LearnB
             // 
+            this.LearnB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LearnB.Location = new System.Drawing.Point(614, 409);
             this.LearnB.Name = "LearnB";
             this.LearnB.Size = new System.Drawing.Size(126, 48);
