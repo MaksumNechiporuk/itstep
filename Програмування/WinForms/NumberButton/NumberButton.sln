@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberButton", "NumberButton\NumberButton.csproj", "{287E052E-B7A0-48A3-8913-8C29BD0A8539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{287E052E-B7A0-48A3-8913-8C29BD0A8539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287E052E-B7A0-48A3-8913-8C29BD0A8539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287E052E-B7A0-48A3-8913-8C29BD0A8539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287E052E-B7A0-48A3-8913-8C29BD0A8539}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {141B4F4E-1D82-47F8-808B-407AFAB09138}
+	EndGlobalSection
+EndGlobal
